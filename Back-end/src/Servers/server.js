@@ -15,7 +15,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(cors({
     credentials:true,
-    origin:["http://localhost:4200"]
+    origin:["https://ecommerce-furniture-website-1sal0vxhy.vercel.app/"]
 }))
 app.use(cookieParser())
 
