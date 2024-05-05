@@ -82,6 +82,13 @@ const UpdateUser = async (req, res) => {
     user.orders = req.body.orders
   }
 
+  if(req.body.username){
+    user.username = req.body.username
+  }
+  if(req.body.email){
+    user.email = req.body.email
+  }
+
   try {
     const updatedUser = await UserModel.findByIdAndUpdate(
       id,
